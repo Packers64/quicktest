@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm i
 COPY . .
 RUN npm install -g @angular/cli
-RUN npm run build:ssr:digitalocean
+RUN npm run build:
 EXPOSE 4200
 EXPOSE 443
 CMD [ "node", "_static/main.js"]
